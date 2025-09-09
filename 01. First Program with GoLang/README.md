@@ -33,7 +33,7 @@ import "fmt"  // Imports the "fmt" package from Go's standard library, enabling 
 
 func main() {  // Defines the main function, the entry point of the program. Execution starts here when the program runs.
 
-	fmt.Println("Hello World")  // Calls fmt.Println to print "Hello World" to standard output, followed by a newline.
+fmt.Println("Hello World")  // Calls fmt.Println to print "Hello World" to standard output, followed by a newline.
 
 }  // Closes the main function. All Go code blocks are enclosed in curly braces.
 ```
