@@ -168,6 +168,6 @@ Modify the `age` variable to different values and observe how the output changes
 ## Next Steps
 
 
-- Learn about [switch statements](../04.%20switch/) for more complex condition handling
+- Learn about [switch statements](../04.%20switch-case/) for more complex condition handling
 - Explore [loops](../05.%20loops/) for repeated execution
 - Study [functions](../06.%20functions/) for code organization
