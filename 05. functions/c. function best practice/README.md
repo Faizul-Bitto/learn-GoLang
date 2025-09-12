@@ -446,7 +446,7 @@ func TestGetUserName(t *testing.T) {
 
 ## Common Anti-patterns to Avoid
 
-### 1. God Functions
+### 1. Good Functions
 
 ```go
 // ❌ Avoid: Functions that do everything
