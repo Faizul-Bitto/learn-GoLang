@@ -1,10 +1,10 @@
 # Anonymous Functions in Go
 
-This section demonstrates anonymous functions in Go - understanding how to create and use functions without explicit names for immediate execution and specialized use cases.
+This section demonstrates anonymous functions in Go - understanding how to create and use functions without explicit names for immediate execution, assignment to variables, and specialized use cases.
 
 ## Overview
 
-Anonymous functions (also called unnamed functions) are functions that are declared without a name and are typically used for immediate execution or as function literals. Unlike named functions, anonymous functions cannot be called from other parts of the code after their definition unless assigned to a variable. They are particularly useful for one-time operations, creating closures, and working with goroutines. This example shows how to create an anonymous function that performs addition and is immediately invoked with specific arguments, demonstrating the IIFE (Immediately Invoked Function Expression) pattern.
+Anonymous functions (also called unnamed functions) are functions that are declared without a name and are typically used for immediate execution or as function literals. Unlike named functions, anonymous functions cannot be called from other parts of the code after their definition unless assigned to a variable. They are particularly useful for one-time operations, creating closures, and working with goroutines. This example demonstrates two common patterns: creating an anonymous function that performs addition and is immediately invoked (IIFE pattern), and assigning an anonymous function to a variable for reuse.
 
 ## Code Example
 
@@ -22,6 +22,13 @@ func main() {
 
 	//! this is also called -> IIFE
 	//! IIFE -> Immediately Invoked Function Expression
+
+	//! we can also assign an anonymous function to a variable
+	add := func(x int, y int) int {
+		return x + y
+	}
+
+	fmt.Println(add(5, 7))
 }
 ```
 
@@ -39,7 +46,7 @@ import "fmt"
 - Imports the `fmt` package for formatted I/O operations
 - The `main` package is required for standalone executables in Go
 
-### 2. Anonymous Function Declaration and Execution
+### 2. Anonymous Function with Immediate Execution (IIFE)
 
 ```go
 func(x int, y int) {
@@ -53,14 +60,32 @@ func(x int, y int) {
 - **Function Body**: Contains the logic that adds the two numbers and prints the result
 - **Immediate Invocation**: `(5, 7)` calls the function immediately with arguments 5 and 7
 - **No Return Type**: This function doesn't return a value, it only prints the result
+- **IIFE Pattern**: This demonstrates Immediately Invoked Function Expression
 
-### 3. Program Execution Flow
+### 3. Anonymous Function Assigned to Variable
+
+```go
+add := func(x int, y int) int {
+	return x + y
+}
+
+fmt.Println(add(5, 7))
+```
+
+- **Variable Assignment**: `add :=` assigns the anonymous function to a variable
+- **Return Type**: `int` specifies that this function returns an integer value
+- **Return Statement**: `return x + y` returns the sum of the two parameters
+- **Function Call**: `add(5, 7)` calls the stored function with arguments
+- **Reusability**: The function can now be called multiple times using the variable name
+
+### 4. Program Execution Flow
 
 1. Program starts with the `main` function (entry point)
-2. The anonymous function is declared and immediately executed with arguments 5 and 7
-3. Inside the anonymous function, parameters x=5 and y=7 are added (z = 12)
-4. The result is printed to the console using `fmt.Println(z)`
-5. The function execution completes and cannot be called again
+2. The first anonymous function is declared and immediately executed with arguments 5 and 7
+3. Inside the first function, parameters x=5 and y=7 are added (z = 12) and printed
+4. The second anonymous function is assigned to the variable `add`
+5. The `add` function is called with arguments 5 and 7, returning 12
+6. The returned result is printed using `fmt.Println(add(5, 7))`
 
 ## Anonymous Function Characteristics
 
@@ -189,13 +214,15 @@ The current program produces the following output:
 
 ```
 12
+12
 ```
 
 **Explanation:**
 
-- The anonymous function is called with arguments 5 and 7
-- Inside the function, z = x + y = 5 + 7 = 12
-- The result 12 is printed to the console using `fmt.Println(z)`
+- The first anonymous function (IIFE) is called with arguments 5 and 7
+- Inside the function, z = x + y = 5 + 7 = 12, which is printed
+- The second anonymous function is assigned to variable `add` and called with arguments 5 and 7
+- The `add` function returns 12, which is then printed by `fmt.Println(add(5, 7))`
 
 ## Running the Code
 
@@ -251,7 +278,31 @@ func main() {
 }
 ```
 
-### Experiment 3: Anonymous Functions Assigned to Variables
+### Experiment 3: Combining IIFE and Variable Assignment
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	// IIFE for immediate calculation
+	func(a, b int) {
+		fmt.Printf("Immediate result: %d\n", a*b)
+	}(4, 5)
+
+	// Assign to variable for reuse
+	multiply := func(a, b int) int {
+		return a * b
+	}
+
+	// Call multiple times
+	fmt.Printf("Reusable result 1: %d\n", multiply(3, 4))
+	fmt.Printf("Reusable result 2: %d\n", multiply(6, 7))
+}
+```
+
+### Experiment 4: Anonymous Functions Assigned to Variables
 
 ```go
 package main

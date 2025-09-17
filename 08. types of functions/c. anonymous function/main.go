@@ -11,4 +11,11 @@ func main() {
 
 	//! this is also called -> IIFE
 	//! IIFE -> Immediately Invoked Function Expression
+
+	//! we can also assign an anonymous function to a variable
+	add := func(x int, y int) int {
+		return x + y
+	}
+
+	fmt.Println(add(5, 7))
 }
