@@ -45,21 +45,24 @@ package main
 
 import "fmt"
 
-//! first order functions :
-
+//! higher order functions :
 /*
-	first order function types:
-
-	1. named/standard function
-	2. anonymous function / IIFE
-
-	higher order functions also known as 'first class functions' -> treated as 'first class citizens'
+	To be a higher order function, a function must have at least one of these features:
+	1. function as a parameter
+	2. function as a return value
+	3. both
 */
 
-func add(a, b int) int {
-	return a + b
+//! function as a parameter
+func higherOrderFunction(a int, b int, f func(x int, y int) int) {
+	fmt.Println(f(1, 2))
+	fmt.Println(f(a, b))
 }
 
 func main() {
-	fmt.Println(add(1, 2))
+	higherOrderFunction(1, 2, calculateAdd)
+}
+
+func calculateAdd(a, b int) int {
+	return a + b
 }
