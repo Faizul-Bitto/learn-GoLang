@@ -983,6 +983,6 @@ func ProcessList(
 ## Next Steps
 
 - Learn about [function as return value](../ii.%20function%20as%20return%20value/) to complete higher order function concepts
-- Study [closures and lexical scoping](../../09.%20closures/) for advanced function behavior
-- Explore [method functions](../../10.%20methods/) for associating functions with types
-- Investigate [concurrent programming with functions](../../11.%20concurrency/) for parallel execution patterns
+- Study [callback functions](../../../f.%20callback%20function/) for event-driven programming
+- Explore [closure](../../../../11.%20closure/) for functions that capture variables
+- Investigate [parameters and arguments](../../../../09.%20parameters%20and%20arguments/) for advanced parameter handling

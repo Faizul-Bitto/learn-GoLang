@@ -132,6 +132,7 @@ func greetUser(name string, age int) {
 ```
 
 **Parameter Characteristics:**
+
 - Defined in the function signature
 - Act as placeholders for incoming data
 - Have specific types that must be declared
@@ -148,6 +149,7 @@ greetUser("Alice", 25)
 ```
 
 **Argument Characteristics:**
+
 - Provided at the time of function call
 - Must match the type and order of parameters
 - Can be literals, variables, or expressions
@@ -291,11 +293,11 @@ func add(x, y int) {
 func main() {
     num1 := 25
     num2 := 35
-    
+
     // Variables as arguments
     add(num1, num2)     // Output: Result: 60
     add(num1*2, num2/5) // Output: Result: 57 (50 + 7)
-    
+
     // Mix of literals and variables
     add(10, num1)       // Output: Result: 35
 }
@@ -350,7 +352,7 @@ func main() {
     sum := calculate("add", 10, 5)         // Arguments: "add", 10, 5
     diff := calculate("subtract", 10, 5)   // Arguments: "subtract", 10, 5
     product := calculate("multiply", 10, 5) // Arguments: "multiply", 10, 5
-    
+
     fmt.Printf("Sum: %d\n", sum)       // Output: Sum: 15
     fmt.Printf("Difference: %d\n", diff) // Output: Difference: 5
     fmt.Printf("Product: %d\n", product) // Output: Product: 50
@@ -369,7 +371,7 @@ import "fmt"
 // Function that processes student data
 func calculateGrade(name string, score int, maxScore int) {
     percentage := float64(score) / float64(maxScore) * 100
-    
+
     var grade string
     switch {
     case percentage >= 90:
@@ -383,7 +385,7 @@ func calculateGrade(name string, score int, maxScore int) {
     default:
         grade = "F"
     }
-    
+
     fmt.Printf("%s: %d/%d (%.1f%%) - Grade: %s\n", name, score, maxScore, percentage, grade)
 }
 
@@ -423,7 +425,7 @@ func main() {
     circleArea := calculateCircleArea(5.0)      // One parameter
     rectArea := calculateRectangleArea(4.0, 6.0) // Two parameters
     triArea := calculateTriangleArea(3.0, 8.0)   // Two parameters
-    
+
     fmt.Printf("Circle area: %.2f\n", circleArea)
     fmt.Printf("Rectangle area: %.2f\n", rectArea)
     fmt.Printf("Triangle area: %.2f\n", triArea)
@@ -458,7 +460,7 @@ func main() {
     fullName := formatFullName("John", "Doe")              // 2 parameters
     email := formatEmail("John.Doe", "example.com")        // 2 parameters
     phone := formatPhoneNumber("1", "555", "123-4567")     // 3 parameters
-    
+
     fmt.Printf("Full Name: %s\n", fullName)
     fmt.Printf("Email: %s\n", email)
     fmt.Printf("Phone: %s\n", phone)
@@ -478,7 +480,7 @@ func configureServer(host string, port int, ssl bool) {
     if ssl {
         protocol = "https"
     }
-    
+
     fmt.Printf("Server configured: %s://%s:%d\n", protocol, host, port)
 }
 
@@ -490,7 +492,7 @@ func main() {
     // Different parameter combinations
     configureServer("localhost", 8080, false)                    // 3 parameters
     configureServer("api.example.com", 443, true)               // 3 parameters
-    
+
     configureDatabaseConnection("mysql", "db.example.com", "myapp", "user", 3306) // 5 parameters
 }
 ```
@@ -516,14 +518,14 @@ func main() {
 
 ### Parameter vs Argument Reference Table
 
-| Aspect | Parameters | Arguments |
-|--------|------------|----------|
-| **Definition** | Variables in function signature | Values passed to function |
-| **Location** | Function declaration | Function call |
-| **Example** | `func add(x, y int)` | `add(10, 20)` |
-| **Scope** | Inside function only | Caller's scope |
-| **Type** | Must be declared | Must match parameter types |
-| **Role** | Receive data | Provide data |
+| Aspect         | Parameters                      | Arguments                  |
+| -------------- | ------------------------------- | -------------------------- |
+| **Definition** | Variables in function signature | Values passed to function  |
+| **Location**   | Function declaration            | Function call              |
+| **Example**    | `func add(x, y int)`            | `add(10, 20)`              |
+| **Scope**      | Inside function only            | Caller's scope             |
+| **Type**       | Must be declared                | Must match parameter types |
+| **Role**       | Receive data                    | Provide data               |
 
 ### Value Passing in Go
 
@@ -547,6 +549,7 @@ func main() {
 ```
 
 **Output:**
+
 ```
 Inside function: 100
 Outside function: 42
@@ -587,7 +590,7 @@ func main() {
     // Slice argument
     nums := []int{1, 2, 3, 4, 5}
     printNumbers(nums)
-    
+
     // Map argument
     studentGrades := map[string]int{
         "Alice": 95,
@@ -595,7 +598,7 @@ func main() {
         "Charlie": 92,
     }
     printStudentGrades(studentGrades)
-    
+
     // Struct argument
     person := Person{Name: "Alice", Age: 25}
     greetPerson(person)
@@ -638,9 +641,9 @@ func main() {
     result2 := sum(1, 2, 3, 4, 5)     // 5 arguments
     result3 := sum(10)                // 1 argument
     result4 := sum()                  // 0 arguments
-    
+
     fmt.Printf("Results: %d, %d, %d, %d\n", result1, result2, result3, result4)
-    
+
     // Variadic with other parameters
     formatMessage("Info", "System started")
     formatMessage("Warning", "Low disk space", "Check logs", "Contact admin")
@@ -894,7 +897,7 @@ func processStructPointer(ls *LargeStruct) {
 
 func main() {
     large := LargeStruct{}
-    
+
     processStruct(large)        // Copies all data
     processStructPointer(&large) // Passes only memory address
 }
@@ -915,11 +918,11 @@ func modifyMap(m map[string]int) {
 func main() {
     nums := []int{1, 2, 3, 4, 5}
     grades := map[string]int{"Alice": 90, "Bob": 85}
-    
+
     fmt.Printf("Before: %v\n", nums)    // [1 2 3 4 5]
     modifySlice(nums)
     fmt.Printf("After: %v\n", nums)     // [999 2 3 4 5] - changed!
-    
+
     fmt.Printf("Before: %v\n", grades)  // map[Alice:90 Bob:85]
     modifyMap(grades)
     fmt.Printf("After: %v\n", grades)   // map[Alice:90 Bob:85 new:100] - changed!
@@ -942,10 +945,9 @@ func main() {
 Now that you understand parameters and arguments, you're ready to explore these advanced function concepts:
 
 - **[Functions with Return Values](../05.%20functions/b.%20function%20with%20return%20type/)** - Learn how functions can return data back to the caller
-- **[Multiple Return Values](../10.%20multiple%20return%20values/)** - Discover Go's ability to return multiple values from a single function  
-- **[Variadic Functions](../11.%20variadic%20functions/)** - Explore functions that can accept a variable number of arguments
-- **[Function Types and Variables](../12.%20function%20types/)** - Learn about treating functions as first-class values
-- **[Method Receivers](../13.%20methods/)** - Understand how parameters work with methods attached to types
-- **[Pointers and Parameters](../14.%20pointers/)** - Learn how to modify original values through pointer parameters
+- **[Types of Functions](../08.%20types%20of%20functions/)** - Explore different function patterns and styles
+- **[Closure](../11.%20closure/)** - Understand how functions can capture variables from their environment
+- **[Pointers and Parameters](../14.%20pointer/)** - Learn how to modify original values through pointer parameters
+- **[Pass by Value or Reference](../15.%20pass%20by%20value%20or%20reference/)** - Understand how data is passed to functions
 
 Understanding parameters and arguments is fundamental to writing effective Go functions and serves as the foundation for all advanced function concepts in Go programming.

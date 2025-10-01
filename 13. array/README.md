@@ -490,8 +490,7 @@ func sumArray(arr [5]int) int {
 
 ## Next Steps
 
-- Learn about [slices](../14.%20slices/) for dynamic arrays
-- Explore [maps](../15.%20maps/) for key-value storage
 - Study [structs](../12.%20struct/) for complex data structures
-- Investigate [pointers](../16.%20pointers/) for memory management
-- Discover [methods](../17.%20methods/) for adding behavior to types
+- Investigate [pointers](../14.%20pointer/) for memory management
+- Learn about [pass by value or reference](../15.%20pass%20by%20value%20or%20reference/) concepts
+- Explore [internal memory](../10.%20internal%20memory/) management

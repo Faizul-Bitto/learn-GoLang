@@ -337,7 +337,7 @@ func (p Person) GetDisplayName() string {
 
 ## Next Steps
 
-- Learn about [methods](../13.%20methods/) for adding behavior to structs
-- Explore [interfaces](../14.%20interfaces/) for defining contracts
-- Study [embedding](../15.%20embedding/) for struct composition
-- Investigate [JSON marshaling](../16.%20json/) for data serialization
+- Learn about [arrays](../13.%20array/) for working with collections
+- Investigate [pointers](../14.%20pointer/) for efficient memory usage with structs
+- Study [pass by value or reference](../15.%20pass%20by%20value%20or%20reference/) to understand how structs are passed
+- Explore [functions](../05.%20functions/) and how they work with structs

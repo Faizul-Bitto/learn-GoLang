@@ -139,9 +139,8 @@ This fundamental concept of pointers is crucial for writing efficient Go program
 
 ## Next Steps
 
-- Explore [slices](../15.%20slices/) for dynamic arrays with pointer-like behavior
-- Learn about [maps](../16.%20maps/) for key-value storage
+- Learn about [pass by value vs reference](../15.%20pass%20by%20value%20or%20reference/) to understand data passing
 - Study [structs](../12.%20struct/) and how pointers work with custom types
-- Investigate [methods](../17.%20methods/) and pointer receivers
-- Discover [interfaces](../18.%20interfaces/) for polymorphic behavior
+- Explore [functions](../05.%20functions/) and how they use pointers
+- Understand [memory management](../10.%20internal%20memory/) concepts
 - Review [arrays](../13.%20array/) to understand the difference with pointers

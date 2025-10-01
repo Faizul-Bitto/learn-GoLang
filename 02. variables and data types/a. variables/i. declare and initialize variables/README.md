@@ -66,3 +66,4 @@ go run main.go
 
 - Learn about [redeclaring variables](../ii.%20redeclare%20another%20value%20in%20a%20variable/)
 - Explore [data types](../../b.%20data%20types/)
+- Study [if-else](../../../03.%20if-else/) statements for conditional logic

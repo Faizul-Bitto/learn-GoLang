@@ -258,6 +258,6 @@ func processLargeRef(data *[1000000]int) {
 
 - Compare with [pass by value](../a.%20pass%20by%20value/) to understand the differences
 - Learn more about [pointers](../../14.%20pointer/) for advanced pointer usage
-- Explore [slices](../../16.%20slices/) which have reference-like behavior
 - Study [function parameters](../../09.%20parameters%20and%20arguments/) in depth
 - Understand [memory management](../../10.%20internal%20memory/) concepts
+- Review [structs](../../12.%20struct/) and how pointers work with custom types

@@ -487,8 +487,8 @@ func process() {
 
 ## Next Steps
 
-- Learn about [error handling in functions](../d.%20error%20handling/) for robust applications
-- Study [function parameters and variadic functions](../e.%20function%20parameters/) for flexible designs
-- Explore [anonymous functions and closures](../f.%20anonymous%20functions/) for advanced patterns
-- Investigate [method definitions](../g.%20methods/) for object-oriented design
-- Practice [unit testing](../h.%20testing/) for function-based code
+- Learn about [scope](../../06.%20scope/) to understand variable visibility in functions
+- Study [variable shadowing](../../07.%20variable%20shadowing/) for advanced variable concepts
+- Explore [types of functions](../../08.%20types%20of%20functions/) for different function patterns
+- Investigate [parameters and arguments](../../09.%20parameters%20and%20arguments/) for flexible function designs
+- Review [closure](../../11.%20closure/) for advanced function concepts

@@ -686,7 +686,7 @@ func(a, b int) {
 
 ## Next Steps
 
-- Learn about [higher-order functions](../d.%20higher%20order%20function/) for advanced function composition
-- Study [method functions](../e.%20method%20function/) for associating functions with types
-- Explore [recursive functions](../f.%20recursive%20function/) for self-calling function patterns
-- Investigate Go's [concurrency patterns](../07.%20goroutines/) using anonymous functions
+- Learn about [first order functions](../d.%20first%20order%20function/) for function fundamentals
+- Study [higher-order functions](../e.%20higher%20order%20function/) for advanced function composition
+- Explore [callback functions](../f.%20callback%20function/) for event-driven programming
+- Investigate [closure](../../11.%20closure/) for functions that capture variables

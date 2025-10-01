@@ -945,7 +945,7 @@ func createEfficientCallbacks(largeData []int) []func() {
 
 ## Next Steps
 
-- Learn about [recursive functions](../g.%20recursive%20function/) for self-calling function patterns
-- Study [method functions](../../09.%20methods/) for associating functions with types
-- Explore [interfaces and function types](../../10.%20interfaces/) for polymorphic callback behavior
-- Investigate [concurrent programming with callbacks](../../11.%20concurrency/) for asynchronous callback patterns
+- Review [other function types](../) to understand the complete function ecosystem
+- Study [parameters and arguments](../../09.%20parameters%20and%20arguments/) for advanced parameter handling
+- Explore [closure](../../11.%20closure/) for functions that capture variables
+- Learn about [structs](../../12.%20struct/) and [arrays](../../13.%20array/) for organizing data used in callbacks

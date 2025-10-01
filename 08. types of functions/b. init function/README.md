@@ -839,6 +839,6 @@ func init() {
 ## Next Steps
 
 - Learn about [anonymous functions](../c.%20anonymous%20function/) to understand functions without names
-- Study [higher-order functions](../d.%20higher%20order%20function/) for advanced function composition
-- Explore [method functions](../e.%20method%20function/) for associating functions with types
-- Investigate [recursive functions](../f.%20recursive%20function/) for self-calling function patterns
+- Study [first order functions](../d.%20first%20order%20function/) for function fundamentals
+- Explore [higher-order functions](../e.%20higher%20order%20function/) for advanced function composition
+- Investigate [callback functions](../f.%20callback%20function/) for event-driven programming

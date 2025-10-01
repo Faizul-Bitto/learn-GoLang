@@ -448,7 +448,7 @@ func memoryExample() {
 
 ## Next Steps
 
-- Learn about [structs and methods](../07.%20structs/) to understand receiver scope
-- Study [error handling](../08.%20error%20handling/) for proper error scope management
-- Explore [goroutines](../09.%20goroutines/) to understand scope in concurrent programming
-- Investigate [interfaces](../10.%20interfaces/) for understanding method scope and visibility
+- Learn about [variable shadowing](../07.%20variable%20shadowing/) to understand scope conflicts
+- Study [types of functions](../08.%20types%20of%20functions/) to understand function scope
+- Explore [parameters and arguments](../09.%20parameters%20and%20arguments/) for parameter scope
+- Investigate [structs](../12.%20struct/) to understand field scope

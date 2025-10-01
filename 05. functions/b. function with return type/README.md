@@ -350,7 +350,7 @@ func isPositive(n int) bool {
 
 ## Next Steps
 
-- Learn about [multiple return values](../c.%20multiple%20return%20values/) for more complex functions
-- Study [error handling](../d.%20error%20handling/) with function returns
-- Explore [function parameters](../e.%20function%20parameters/) for more advanced parameter handling
-- Investigate [anonymous functions](../f.%20anonymous%20functions/) and function variables
+- Study [function best practices](../c.%20function%20best%20practice/) for writing clean code
+- Learn about [scope](../../06.%20scope/) to understand variable visibility
+- Explore [types of functions](../../08.%20types%20of%20functions/) for different function patterns
+- Investigate [parameters and arguments](../../09.%20parameters%20and%20arguments/) for advanced parameter handling

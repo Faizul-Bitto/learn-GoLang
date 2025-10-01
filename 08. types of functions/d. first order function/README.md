@@ -796,4 +796,4 @@ func buildStringSlowly(parts []string) string {
 - Learn about [higher order functions](../e.%20higher%20order%20function/) that can operate on other functions
 - Study [function as parameter](../e.%20higher%20order%20function/i.%20function%20as%20parameter/) for passing functions as arguments
 - Explore [function as return value](../e.%20higher%20order%20function/ii.%20function%20as%20return%20value/) for functions that return other functions
-- Investigate [closures and advanced function patterns](../../09.%20advanced%20functions/) for complex function behaviors
+- Investigate [callback functions](../f.%20callback%20function/) for event-driven programming

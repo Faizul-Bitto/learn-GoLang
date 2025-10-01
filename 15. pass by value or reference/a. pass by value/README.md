@@ -196,5 +196,6 @@ func tryToModify(arr [3]int) {
 
 - Learn about [pass by reference](../b.%20pass%20by%20reference/) to modify original data
 - Explore [pointers](../../14.%20pointer/) for efficient memory usage
-- Study [slices](../../16.%20slices/) which behave differently than arrays
+- Review [arrays](../../13.%20array/) to understand the relationship
 - Understand [function parameters](../../09.%20parameters%20and%20arguments/) in depth
+- Study [structs](../../12.%20struct/) and how they're passed to functions

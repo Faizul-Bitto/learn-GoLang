@@ -153,4 +153,5 @@ go run main.go
 
 - Learn about [variable declaration](../a.%20variables/i.%20declare%20and%20initialize%20variables/)
 - Explore [variable reassignment](../a.%20variables/ii.%20redeclare%20another%20value%20in%20a%20variable/)
-- Study more advanced types like arrays, slices, and structs
+- Study [if-else](../../03.%20if-else/) statements for conditional logic
+- Learn about [functions](../../05.%20functions/) for code organization

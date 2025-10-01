@@ -654,7 +654,7 @@ func returnError() (result int, err error) {
 
 ## Next Steps
 
-- Learn about [structs and methods](../08.%20structs/) to understand receiver scope and method-level shadowing
-- Study [error handling patterns](../09.%20error%20handling/) for proper error variable management
-- Explore [packages and imports](../10.%20packages/) to understand package-level scope and visibility
-- Investigate [goroutines and channels](../11.%20concurrency/) for scope in concurrent programming contexts
+- Learn about [types of functions](../08.%20types%20of%20functions/) to understand function-level shadowing
+- Study [parameters and arguments](../09.%20parameters%20and%20arguments/) for parameter shadowing concepts
+- Explore [closure](../11.%20closure/) to understand variable capture and shadowing
+- Investigate [structs](../12.%20struct/) to understand field shadowing

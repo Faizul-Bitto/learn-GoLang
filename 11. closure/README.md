@@ -894,3 +894,4 @@ func main() {
 - Study [anonymous functions](../08.%20types%20of%20functions/c.%20anonymous%20function/) for inline function definitions
 - Explore [first order functions](../08.%20types%20of%20functions/d.%20first%20order%20function/) for function fundamentals
 - Investigate [callback functions](../08.%20types%20of%20functions/f.%20callback%20function/) for event-driven programming
+- Review [structs](../12.%20struct/) and [arrays](../13.%20array/) for data organization

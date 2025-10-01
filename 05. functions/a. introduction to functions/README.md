@@ -260,7 +260,7 @@ result := sum(1, 2, 3, 4, 5) // Returns 15
 
 ## Next Steps
 
-- Learn about [arrays and slices](../06.%20arrays%20and%20slices/) for working with collections
-- Study [structs](../07.%20structs/) for creating custom data types
-- Explore [error handling](../08.%20error%20handling/) for robust applications
-- Investigate [methods](../09.%20methods/) for associating functions with types
+- Learn about [functions with return types](../b.%20function%20with%20return%20type/) for more complex functions
+- Study [function best practices](../c.%20function%20best%20practice/) for writing clean code
+- Explore [scope](../../06.%20scope/) to understand variable visibility in functions
+- Investigate [types of functions](../../08.%20types%20of%20functions/) for different function patterns

@@ -9,6 +9,7 @@ Once a variable is declared in Go, you can reassign new values to it, but there 
 ## Variable Reassignment
 
 ### Basic Reassignment
+
 ```go
 a := 10
 a = 20  // Valid: reassigning a new value of the same type
@@ -21,6 +22,7 @@ a = 20  // Valid: reassigning a new value of the same type
 ### Type Safety in Go
 
 Go is a statically typed language, which means:
+
 - Once a variable is declared with a specific type, it cannot change types
 - Type checking happens at compile time
 - This prevents many runtime errors
@@ -28,6 +30,7 @@ Go is a statically typed language, which means:
 ## What You Can Do
 
 ✅ **Valid Operations:**
+
 - Reassign values of the same type
 - Update numeric values
 - Change string content
@@ -47,6 +50,7 @@ isActive = true // Valid
 ## What You Cannot Do
 
 ❌ **Invalid Operations:**
+
 - Change the data type of an existing variable
 - Mix incompatible types
 
@@ -67,15 +71,18 @@ variable 'a' after redeclaration : 20
 ## Key Concepts
 
 ### 1. Assignment vs Declaration
+
 - `:=` is for **declaration and assignment** (first time)
 - `=` is for **assignment only** (subsequent times)
 
 ### 2. Type Immutability
+
 - Variables maintain their type throughout their lifetime
 - Go's compiler enforces this rule strictly
 - This is different from dynamically typed languages
 
 ### 3. Compile-Time Safety
+
 - Type errors are caught during compilation
 - No runtime surprises due to type mismatches
 - Better performance and reliability
@@ -83,6 +90,7 @@ variable 'a' after redeclaration : 20
 ## Common Mistakes
 
 1. **Using `:=` for reassignment:**
+
    ```go
    a := 10
    a := 20  // Error: no new variables on left side of :=
@@ -105,4 +113,5 @@ go run main.go
 ## Next Steps
 
 - Learn about [data types](../../b.%20data%20types/)
-- Explore [variable scoping](../i.%20declare%20and%20initialize%20variables/)
+- Explore [if-else](../../../03.%20if-else/) statements for conditional logic
+- Study [functions](../../../05.%20functions/) for code organization

@@ -870,7 +870,7 @@ func createSafeOperation(op string) (func(int, int) (int, error), error) {
 
 ## Next Steps
 
-- Learn about [closures and lexical scoping](../../09.%20closures/) for advanced function state management
-- Study [method functions](../../10.%20methods/) for associating functions with types
-- Explore [interfaces and function types](../../11.%20interfaces/) for polymorphic function behavior
-- Investigate [concurrent programming with functions](../../12.%20concurrency/) for parallel function execution
+- Learn about [callback functions](../../f.%20callback%20function/) for event-driven programming
+- Study [closure](../../../../11.%20closure/) for functions that capture variables from their environment
+- Explore [parameters and arguments](../../../../09.%20parameters%20and%20arguments/) for advanced parameter handling
+- Review all [types of functions](../../) to understand the complete function ecosystem
