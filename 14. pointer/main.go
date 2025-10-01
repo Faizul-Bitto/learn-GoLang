@@ -26,7 +26,7 @@ func main() {
 		For example :
 
 			func print(numbers [5]int){
-				fmt.Println(arr)
+				fmt.Println(numbers)
 			}
 
 		   	func main(){
@@ -41,7 +41,7 @@ func main() {
 		So, what we can do is, we can pass the address of the array to the function 'print()'. How it will give us the benefit?
 
 			func print(numbers *[5]int){
-				fmt.Println(arr)
+				fmt.Println(numbers)
 			}
 
 		   	func main(){
