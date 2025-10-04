@@ -9,7 +9,8 @@ import "fmt"
 
 func main() {
 	x := 5
-	p := &x                                           // & -> ampersand => 'address of'
+	// p := &x                                           // & -> ampersand => 'address of'
+	var p *int = &x                                   // another way to directly declare the address in a variable with 'var'
 	fmt.Println("Address of 'a', hold by 'p' is:", p) // for example => 0xc00000a0f8 => 'p' is holding the address of 'x'
 
 	// Now, we can also print the value of that memory address 'p' is holding by using '*'
