@@ -145,9 +145,24 @@ func main() {
 
 ## Memory Management
 
-### Capacity Growth Strategy
+### Slice Underlying Rules
 
-Go uses a doubling strategy for capacity growth:
+Understanding how Go manages slice capacity is crucial for efficient programming. Go follows specific rules for capacity growth:
+
+#### Capacity Growth Strategy
+
+**For the first 1024 elements:**
+
+- When new elements are added and capacity is exceeded, the capacity is **doubled**
+- This means if you have 1024 elements and add one more, the new capacity becomes 2048
+
+**After 2048 elements:**
+
+- Capacity growth changes to **1.25 times** (25% increase)
+- So if you have 2048 elements and add one more, the new capacity becomes 2560
+- This pattern continues with 1.25x growth for larger slices
+
+#### Visual Example
 
 ```go
 // Capacity progression for small slices
@@ -157,6 +172,15 @@ After 2nd append: 2
 After 3rd append: 4
 After 5th append: 8
 After 9th append: 16
+After 17th append: 32
+After 33rd append: 64
+// ... continues doubling until 1024
+
+// After 1024 elements:
+After 1025th append: 2048 (doubled from 1024)
+After 2049th append: 2560 (1.25x from 2048)
+After 2561st append: 3200 (1.25x from 2560)
+// ... continues with 1.25x growth
 ```
 
 ### Memory Allocation Example
@@ -183,6 +207,39 @@ func main() {
     // Initial: len=0, cap=3
     // Within capacity: len=3, cap=3
     // Beyond capacity: len=4, cap=6
+}
+```
+
+### Demonstrating Underlying Rules
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    var slice []int
+    slice = append(slice, 1, 2, 3, 4, 5)
+    /*
+        'append()' method takes two arguments :
+
+        1. slice to which you want to append
+        2. elements to be appended
+    */
+    fmt.Println(slice)
+
+    /*
+        Slice Underlying Rules:
+
+        If the capacity of the slice is less than the number of elements to be appended,
+        then the capacity of the slice will be doubled.
+
+        For first 1024 elements (If new element comes) = Capacity increase 2 times.
+        So, the capacity will be = 2048
+
+        Then, after 2048, if new element come = Capacity increase 1.25 times.
+        So, the capacity will be = 2560, and it will continue like this with 1.25 times.
+    */
 }
 ```
 
